@@ -30,13 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSummary));
             this.lvDatas = new System.Windows.Forms.ListView();
-            this.btnSortlist = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
+            this.btnSortlist = new System.Windows.Forms.Button();
+            this.dtpDateSearcher = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblDetails = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -53,6 +54,17 @@
             this.lvDatas.TabIndex = 0;
             this.lvDatas.UseCompatibleStateImageBehavior = false;
             this.lvDatas.View = System.Windows.Forms.View.Details;
+            this.lvDatas.SelectedIndexChanged += new System.EventHandler(this.lvDatas_SelectedIndexChanged);
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Full Name";
+            this.columnHeader1.Width = 100;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Date";
+            this.columnHeader2.Width = 100;
             // 
             // btnSortlist
             // 
@@ -63,23 +75,13 @@
             this.btnSortlist.Text = "Sort List";
             this.btnSortlist.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
+            // dtpDateSearcher
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(132, 404);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(110, 23);
-            this.dateTimePicker1.TabIndex = 2;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Date";
-            this.columnHeader1.Width = 100;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Full Name";
-            this.columnHeader2.Width = 100;
+            this.dtpDateSearcher.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDateSearcher.Location = new System.Drawing.Point(132, 404);
+            this.dtpDateSearcher.Name = "dtpDateSearcher";
+            this.dtpDateSearcher.Size = new System.Drawing.Size(110, 23);
+            this.dtpDateSearcher.TabIndex = 2;
             // 
             // panel1
             // 
@@ -112,24 +114,35 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "CONTACT TRACING FORM";
             // 
+            // lblDetails
+            // 
+            this.lblDetails.AutoSize = true;
+            this.lblDetails.Location = new System.Drawing.Point(427, 164);
+            this.lblDetails.Name = "lblDetails";
+            this.lblDetails.Size = new System.Drawing.Size(0, 15);
+            this.lblDetails.TabIndex = 4;
+            // 
             // FrmSummary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(243)))), ((int)(((byte)(233)))));
             this.ClientSize = new System.Drawing.Size(675, 522);
+            this.Controls.Add(this.lblDetails);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpDateSearcher);
             this.Controls.Add(this.btnSortlist);
             this.Controls.Add(this.lvDatas);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FrmSummary";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FrmSummary_Load);
+            this.Shown += new System.EventHandler(this.FrmSummary_Shown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -137,11 +150,12 @@
 
         private ListView lvDatas;
         private Button btnSortlist;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker dtpDateSearcher;
         private ColumnHeader columnHeader1;
         private ColumnHeader columnHeader2;
         private Panel panel1;
         private PictureBox pictureBox1;
         private Label label1;
+        private Label lblDetails;
     }
 }
