@@ -2,7 +2,7 @@ namespace MyContactTracingApp
 {
     public partial class FrmInfo : Form
     {
-        
+       
         public FrmInfo()
         {
             InitializeComponent();
@@ -40,7 +40,7 @@ namespace MyContactTracingApp
 
                 if (rdbtn1.Checked)
                 {
-                    file.WriteLine("Question1: This person is having  difficulty in breathing");
+                    file.WriteLine("Question1: This person have lost his sens of taste and smell");
                 }
                 else if (rdbtn2.Checked)
                 {
@@ -48,7 +48,7 @@ namespace MyContactTracingApp
                 }
                 if (rdbtn3.Checked)
                 {
-                    file.WriteLine("Question2: This person have lost his sense of taste and smell");
+                    file.WriteLine("Question2: This person have sore throat");
                 }
                 else if (rdbtn4.Checked)
                 {
@@ -56,7 +56,7 @@ namespace MyContactTracingApp
                 }
                 if (rdbtn5.Checked)
                 {
-                    file.WriteLine("Question3: This person have sore throat");
+                    file.WriteLine("Question3: This person have fever");
                 }
                 else if (rdbtn6.Checked)
                 {
@@ -64,7 +64,7 @@ namespace MyContactTracingApp
                 }
                 if (rdbtn7.Checked)
                 {
-                    file.WriteLine("Question4: This person have fever and chills");
+                    file.WriteLine("Question4: This person is experiencing difficulty in breathing");
                 }
                 else if (rdbtn8.Checked)
                 {
@@ -72,7 +72,7 @@ namespace MyContactTracingApp
                 }
                 if (rdbtn9.Checked)
                 {
-                    file.WriteLine("Question5: This person have diarrhea");
+                    file.WriteLine("Question5: This person have been exposed to covid patient");
                 }
                 else if (rdbtn10.Checked)
                 {
@@ -80,7 +80,7 @@ namespace MyContactTracingApp
                 }
                 if (rdbtn11.Checked)
                 {
-                    file.WriteLine("Question6: This person have experienced having nausea and vomiting ");
+                    file.WriteLine("Question6: This person have travelled outside the country ");
                 }
                 else if (rdbtn12.Checked)
                 {
@@ -88,15 +88,24 @@ namespace MyContactTracingApp
                 }
                 if (rdbtn13.Checked)
                 {
-                    file.WriteLine("Question7: This person have been exposed to a covid-19 patient");
+                    file.WriteLine("Question7: This person have already received two doses of Covid-19 Vaccine");
                 }
                 else if (rdbtn14.Checked)
                 {
-                    file.WriteLine("Question7: NO");
+                    file.WriteLine("Question7: This person is not fully Vaccinated");
                 }
+
+
+               
                 file.WriteLine();
                 file.Close();
                 MessageBox.Show("Your response has been recorded");
+         
+
+                FrmSummary frmSummary = new FrmSummary();
+                frmSummary.originalform = this;
+                frmSummary.Show();
+                this.Hide();
             }
             else
                 MessageBox.Show("Please fill in the fields properly");

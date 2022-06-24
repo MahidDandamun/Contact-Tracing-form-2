@@ -12,9 +12,16 @@ namespace MyContactTracingApp
 {
     public partial class FrmSummary : Form
     {
+        public FrmInfo originalform;
         public FrmSummary()
         {
             InitializeComponent();
         }
+
+        private void FrmSummary_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
