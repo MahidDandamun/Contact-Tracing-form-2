@@ -70,7 +70,7 @@
             // 
             // btnSortlist
             // 
-            this.btnSortlist.Location = new System.Drawing.Point(245, 404);
+            this.btnSortlist.Location = new System.Drawing.Point(245, 417);
             this.btnSortlist.Name = "btnSortlist";
             this.btnSortlist.Size = new System.Drawing.Size(100, 26);
             this.btnSortlist.TabIndex = 1;
@@ -81,7 +81,7 @@
             // dtpDateSearcher
             // 
             this.dtpDateSearcher.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDateSearcher.Location = new System.Drawing.Point(92, 407);
+            this.dtpDateSearcher.Location = new System.Drawing.Point(94, 420);
             this.dtpDateSearcher.Name = "dtpDateSearcher";
             this.dtpDateSearcher.Size = new System.Drawing.Size(110, 23);
             this.dtpDateSearcher.TabIndex = 2;
@@ -133,6 +133,7 @@
             this.btnAnotherOne.TabIndex = 5;
             this.btnAnotherOne.Text = "Create Another form";
             this.btnAnotherOne.UseVisualStyleBackColor = true;
+            this.btnAnotherOne.Click += new System.EventHandler(this.btnAnotherOne_Click);
             // 
             // panel2
             // 

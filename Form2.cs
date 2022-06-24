@@ -84,5 +84,12 @@ namespace MyContactTracingApp
                 }
             }
         }
+
+        private void btnAnotherOne_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmInfo frm = new FrmInfo();
+            frm.Show();
+        }
     }
 }
