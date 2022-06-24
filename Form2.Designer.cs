@@ -38,7 +38,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblDetails = new System.Windows.Forms.Label();
-            this.btnAnotherOne = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -61,12 +60,12 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "Full Name";
-            this.columnHeader1.Width = 100;
+            this.columnHeader1.Width = 120;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Date";
-            this.columnHeader2.Width = 100;
+            this.columnHeader2.Width = 120;
             // 
             // btnSortlist
             // 
@@ -125,16 +124,6 @@
             this.lblDetails.Size = new System.Drawing.Size(0, 15);
             this.lblDetails.TabIndex = 4;
             // 
-            // btnAnotherOne
-            // 
-            this.btnAnotherOne.Location = new System.Drawing.Point(540, 407);
-            this.btnAnotherOne.Name = "btnAnotherOne";
-            this.btnAnotherOne.Size = new System.Drawing.Size(131, 26);
-            this.btnAnotherOne.TabIndex = 5;
-            this.btnAnotherOne.Text = "Create Another form";
-            this.btnAnotherOne.UseVisualStyleBackColor = true;
-            this.btnAnotherOne.Click += new System.EventHandler(this.btnAnotherOne_Click);
-            // 
             // panel2
             // 
             this.panel2.Location = new System.Drawing.Point(352, 115);
@@ -148,7 +137,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(243)))), ((int)(((byte)(233)))));
             this.ClientSize = new System.Drawing.Size(783, 466);
-            this.Controls.Add(this.btnAnotherOne);
             this.Controls.Add(this.lblDetails);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dtpDateSearcher);
@@ -179,7 +167,6 @@
         private PictureBox pictureBox1;
         private Label label1;
         private Label lblDetails;
-        private Button btnAnotherOne;
         private Panel panel2;
     }
 }

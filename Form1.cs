@@ -94,9 +94,6 @@ namespace MyContactTracingApp
                 {
                     file.WriteLine("Question7: This person is not fully Vaccinated");
                 }
-
-
-               
                 file.WriteLine();
                 file.Close();
                 MessageBox.Show("Your response has been recorded");
