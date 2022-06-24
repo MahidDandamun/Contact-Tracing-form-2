@@ -38,6 +38,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblDetails = new System.Windows.Forms.Label();
+            this.btnAnotherOne = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -68,17 +70,18 @@
             // 
             // btnSortlist
             // 
-            this.btnSortlist.Location = new System.Drawing.Point(132, 445);
+            this.btnSortlist.Location = new System.Drawing.Point(245, 404);
             this.btnSortlist.Name = "btnSortlist";
             this.btnSortlist.Size = new System.Drawing.Size(100, 26);
             this.btnSortlist.TabIndex = 1;
             this.btnSortlist.Text = "Sort List";
             this.btnSortlist.UseVisualStyleBackColor = true;
+            this.btnSortlist.Click += new System.EventHandler(this.btnSortlist_Click);
             // 
             // dtpDateSearcher
             // 
             this.dtpDateSearcher.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDateSearcher.Location = new System.Drawing.Point(132, 404);
+            this.dtpDateSearcher.Location = new System.Drawing.Point(92, 407);
             this.dtpDateSearcher.Name = "dtpDateSearcher";
             this.dtpDateSearcher.Size = new System.Drawing.Size(110, 23);
             this.dtpDateSearcher.TabIndex = 2;
@@ -90,7 +93,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(679, 95);
+            this.panel1.Size = new System.Drawing.Size(785, 95);
             this.panel1.TabIndex = 3;
             // 
             // pictureBox1
@@ -117,22 +120,40 @@
             // lblDetails
             // 
             this.lblDetails.AutoSize = true;
-            this.lblDetails.Location = new System.Drawing.Point(427, 164);
+            this.lblDetails.Location = new System.Drawing.Point(353, 121);
             this.lblDetails.Name = "lblDetails";
             this.lblDetails.Size = new System.Drawing.Size(0, 15);
             this.lblDetails.TabIndex = 4;
+            // 
+            // btnAnotherOne
+            // 
+            this.btnAnotherOne.Location = new System.Drawing.Point(540, 407);
+            this.btnAnotherOne.Name = "btnAnotherOne";
+            this.btnAnotherOne.Size = new System.Drawing.Size(131, 26);
+            this.btnAnotherOne.TabIndex = 5;
+            this.btnAnotherOne.Text = "Create Another form";
+            this.btnAnotherOne.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(352, 115);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(419, 272);
+            this.panel2.TabIndex = 6;
             // 
             // FrmSummary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(243)))), ((int)(((byte)(233)))));
-            this.ClientSize = new System.Drawing.Size(675, 522);
+            this.ClientSize = new System.Drawing.Size(783, 466);
+            this.Controls.Add(this.btnAnotherOne);
             this.Controls.Add(this.lblDetails);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dtpDateSearcher);
             this.Controls.Add(this.btnSortlist);
             this.Controls.Add(this.lvDatas);
+            this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FrmSummary";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -157,5 +178,7 @@
         private PictureBox pictureBox1;
         private Label label1;
         private Label lblDetails;
+        private Button btnAnotherOne;
+        private Panel panel2;
     }
 }

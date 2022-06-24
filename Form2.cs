@@ -72,5 +72,17 @@ namespace MyContactTracingApp
                 
 
         }
+        private void btnSortlist_Click(object sender, EventArgs e)
+        {
+            DateOnly currentdate = DateOnly.FromDateTime(dtpDateSearcher.Value);
+            lvDatas.Items.Clear();
+            for (int i = 0; i < dates.Count; i++)
+            {
+                if (currentdate.CompareTo(dates[i])==0)
+                {
+                    lvDatas.Items.Add(items[i]);
+                }
+            }
+        }
     }
 }
