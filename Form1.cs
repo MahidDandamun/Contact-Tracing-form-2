@@ -94,19 +94,9 @@ namespace MyContactTracingApp
                 {
                     file.WriteLine("Question7: NO");
                 }
-               
-               
-                
-              
-
                 file.WriteLine();
                 file.Close();
                 MessageBox.Show("Your response has been recorded");
-
-
-                
-
-
             }
             else
                 MessageBox.Show("Please fill in the fields properly");
