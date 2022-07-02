@@ -38,7 +38,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblDetails = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnl2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -124,12 +124,12 @@
             this.lblDetails.Size = new System.Drawing.Size(0, 15);
             this.lblDetails.TabIndex = 4;
             // 
-            // panel2
+            // pnl2
             // 
-            this.panel2.Location = new System.Drawing.Point(352, 115);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(419, 272);
-            this.panel2.TabIndex = 6;
+            this.pnl2.Location = new System.Drawing.Point(352, 115);
+            this.pnl2.Name = "pnl2";
+            this.pnl2.Size = new System.Drawing.Size(419, 272);
+            this.pnl2.TabIndex = 6;
             // 
             // FrmSummary
             // 
@@ -142,7 +142,7 @@
             this.Controls.Add(this.dtpDateSearcher);
             this.Controls.Add(this.btnSortlist);
             this.Controls.Add(this.lvDatas);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pnl2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FrmSummary";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -167,6 +167,6 @@
         private PictureBox pictureBox1;
         private Label label1;
         private Label lblDetails;
-        private Panel panel2;
+        private Panel pnl2;
     }
 }
