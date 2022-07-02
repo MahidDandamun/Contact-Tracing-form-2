@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MyContactTracingApp
 {
-    public partial class Form3 : Form
+    public partial class FrmQrGenerator : Form
     {
-        public Form3()
+        public FrmQrGenerator()
         {
             InitializeComponent();
         }

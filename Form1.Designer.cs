@@ -83,6 +83,7 @@
             this.txtbxFullname = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
+            this.btnCreateQrCode = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlPersonalInfo.SuspendLayout();
@@ -771,7 +772,7 @@
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(269, 833);
+            this.btnSubmit.Location = new System.Drawing.Point(517, 833);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(124, 40);
             this.btnSubmit.TabIndex = 2;
@@ -779,12 +780,22 @@
             this.btnSubmit.UseVisualStyleBackColor = true;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
+            // btnCreateQrCode
+            // 
+            this.btnCreateQrCode.Location = new System.Drawing.Point(47, 833);
+            this.btnCreateQrCode.Name = "btnCreateQrCode";
+            this.btnCreateQrCode.Size = new System.Drawing.Size(124, 29);
+            this.btnCreateQrCode.TabIndex = 3;
+            this.btnCreateQrCode.Text = "Create Qr code";
+            this.btnCreateQrCode.UseVisualStyleBackColor = true;
+            // 
             // FrmInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(243)))), ((int)(((byte)(233)))));
-            this.ClientSize = new System.Drawing.Size(666, 885);
+            this.ClientSize = new System.Drawing.Size(664, 885);
+            this.Controls.Add(this.btnCreateQrCode);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.pnlPersonalInfo);
             this.Controls.Add(this.panel1);
@@ -871,5 +882,6 @@
         private RadioButton rdbtn5;
         private RadioButton rdbtn2;
         private RadioButton rdbtn1;
+        private Button btnCreateQrCode;
     }
 }
