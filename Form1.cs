@@ -16,7 +16,7 @@ namespace MyContactTracingApp
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             if ((txtbxAddress.Text != "") && (txtbxFullname.Text != "") && (txtbxEmail.Text != "") && (cbAge.Text != "") &&
-         (txtbxContact.Text != "") && (txtbxTemp.Text != "") && (txtbxZip.Text != "") &&
+         (txtbxContact.Text != "") && (cbBodyTemp.Text != "") && (txtbxZip.Text != "") &&
          ((rdbtn1.Checked != false) || (rdbtn2.Checked != false)) &&
          ((rdbtn3.Checked != false) || (rdbtn4.Checked != false)) &&
          ((rdbtn5.Checked != false) || (rdbtn6.Checked != false)) &&
@@ -36,7 +36,7 @@ namespace MyContactTracingApp
                 file.WriteLine("Date of visit: " + dtpDov.Text);
                 file.WriteLine("Zip code: " + txtbxZip.Text);
                 file.WriteLine("Age: " + cbAge.Text);
-                file.WriteLine("Temperature: " + txtbxTemp.Text);
+                file.WriteLine("Temperature: " + cbBodyTemp.Text);
 
                 if (rdbtn1.Checked)
                 {
@@ -108,5 +108,12 @@ namespace MyContactTracingApp
                 MessageBox.Show("Please fill in the fields properly");
         }
 
+        private void btnCreateQrCode_Click(object sender, EventArgs e)
+        {
+         FrmQrGenerator frmQrGenerator = new FrmQrGenerator();  
+            frmQrGenerator.originalform = this; 
+            frmQrGenerator.Show();
+            this.Hide();
+        }
     }
 }

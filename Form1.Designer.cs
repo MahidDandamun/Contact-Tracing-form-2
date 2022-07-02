@@ -78,12 +78,12 @@
             this.txtbxAddress = new System.Windows.Forms.TextBox();
             this.txtbxContact = new System.Windows.Forms.TextBox();
             this.txtbxZip = new System.Windows.Forms.TextBox();
-            this.txtbxTemp = new System.Windows.Forms.TextBox();
             this.txtbxEmail = new System.Windows.Forms.TextBox();
             this.txtbxFullname = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.btnCreateQrCode = new System.Windows.Forms.Button();
+            this.cbBodyTemp = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlPersonalInfo.SuspendLayout();
@@ -129,6 +129,7 @@
             // 
             // pnlPersonalInfo
             // 
+            this.pnlPersonalInfo.Controls.Add(this.cbBodyTemp);
             this.pnlPersonalInfo.Controls.Add(this.groupBox7);
             this.pnlPersonalInfo.Controls.Add(this.groupBox6);
             this.pnlPersonalInfo.Controls.Add(this.groupBox5);
@@ -160,7 +161,6 @@
             this.pnlPersonalInfo.Controls.Add(this.txtbxAddress);
             this.pnlPersonalInfo.Controls.Add(this.txtbxContact);
             this.pnlPersonalInfo.Controls.Add(this.txtbxZip);
-            this.pnlPersonalInfo.Controls.Add(this.txtbxTemp);
             this.pnlPersonalInfo.Controls.Add(this.txtbxEmail);
             this.pnlPersonalInfo.Controls.Add(this.txtbxFullname);
             this.pnlPersonalInfo.Controls.Add(this.label2);
@@ -738,13 +738,6 @@
             this.txtbxZip.Size = new System.Drawing.Size(171, 23);
             this.txtbxZip.TabIndex = 5;
             // 
-            // txtbxTemp
-            // 
-            this.txtbxTemp.Location = new System.Drawing.Point(441, 215);
-            this.txtbxTemp.Name = "txtbxTemp";
-            this.txtbxTemp.Size = new System.Drawing.Size(110, 23);
-            this.txtbxTemp.TabIndex = 4;
-            // 
             // txtbxEmail
             // 
             this.txtbxEmail.Location = new System.Drawing.Point(321, 265);
@@ -782,12 +775,32 @@
             // 
             // btnCreateQrCode
             // 
-            this.btnCreateQrCode.Location = new System.Drawing.Point(47, 833);
+            this.btnCreateQrCode.Location = new System.Drawing.Point(47, 839);
             this.btnCreateQrCode.Name = "btnCreateQrCode";
             this.btnCreateQrCode.Size = new System.Drawing.Size(124, 29);
             this.btnCreateQrCode.TabIndex = 3;
             this.btnCreateQrCode.Text = "Create Qr code";
             this.btnCreateQrCode.UseVisualStyleBackColor = true;
+            this.btnCreateQrCode.Click += new System.EventHandler(this.btnCreateQrCode_Click);
+            // 
+            // cbBodyTemp
+            // 
+            this.cbBodyTemp.FormattingEnabled = true;
+            this.cbBodyTemp.Items.AddRange(new object[] {
+            "35°",
+            "35.5°",
+            "36°",
+            "36.5°",
+            "37°",
+            "37.5°",
+            "38°",
+            "38.5°",
+            "",
+            ""});
+            this.cbBodyTemp.Location = new System.Drawing.Point(441, 215);
+            this.cbBodyTemp.Name = "cbBodyTemp";
+            this.cbBodyTemp.Size = new System.Drawing.Size(53, 23);
+            this.cbBodyTemp.TabIndex = 34;
             // 
             // FrmInfo
             // 
@@ -849,7 +862,6 @@
         private TextBox txtbxAddress;
         private TextBox txtbxContact;
         private TextBox txtbxZip;
-        private TextBox txtbxTemp;
         private TextBox txtbxEmail;
         private TextBox txtbxFullname;
         private Label label2;
@@ -883,5 +895,6 @@
         private RadioButton rdbtn2;
         private RadioButton rdbtn1;
         private Button btnCreateQrCode;
+        private ComboBox cbBodyTemp;
     }
 }

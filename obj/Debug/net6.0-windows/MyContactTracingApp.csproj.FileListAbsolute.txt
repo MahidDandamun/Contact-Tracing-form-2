@@ -17,3 +17,4 @@ E:\Source\Repos\MyContactTracingApp\obj\Debug\net6.0-windows\MyContactTracingApp
 E:\Source\Repos\MyContactTracingApp\obj\Debug\net6.0-windows\MyContactTracingApp.genruntimeconfig.cache
 E:\Source\Repos\MyContactTracingApp\obj\Debug\net6.0-windows\ref\MyContactTracingApp.dll
 E:\Source\Repos\MyContactTracingApp\obj\Debug\net6.0-windows\MyContactTracingApp.FrmSummary.resources
+E:\Source\Repos\MyContactTracingApp\obj\Debug\net6.0-windows\MyContactTracingApp.FrmQrGenerator.resources

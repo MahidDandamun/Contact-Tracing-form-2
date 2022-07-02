@@ -48,6 +48,7 @@
             this.cbAge = new System.Windows.Forms.ComboBox();
             this.cbBodyTemp = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.btnBackToFrmInfo = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -329,12 +330,23 @@
             this.label9.TabIndex = 19;
             this.label9.Text = "FILL THE PERSONAL INFORMATION";
             // 
+            // btnBackToFrmInfo
+            // 
+            this.btnBackToFrmInfo.Location = new System.Drawing.Point(412, 400);
+            this.btnBackToFrmInfo.Name = "btnBackToFrmInfo";
+            this.btnBackToFrmInfo.Size = new System.Drawing.Size(77, 29);
+            this.btnBackToFrmInfo.TabIndex = 20;
+            this.btnBackToFrmInfo.Text = "-->";
+            this.btnBackToFrmInfo.UseVisualStyleBackColor = true;
+            this.btnBackToFrmInfo.Click += new System.EventHandler(this.btnBackToFrmInfo_Click);
+            // 
             // FrmQrGenerator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(243)))), ((int)(((byte)(233)))));
             this.ClientSize = new System.Drawing.Size(523, 450);
+            this.Controls.Add(this.btnBackToFrmInfo);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.cbBodyTemp);
             this.Controls.Add(this.cbAge);
@@ -355,6 +367,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FrmQrGenerator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.FrmQrGenerator_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -384,5 +397,6 @@
         private ComboBox cbAge;
         private ComboBox cbBodyTemp;
         private Label label9;
+        private Button btnBackToFrmInfo;
     }
 }
