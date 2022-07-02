@@ -69,12 +69,16 @@
             // 
             // btnSortlist
             // 
+            this.btnSortlist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(106)))), ((int)(((byte)(78)))));
+            this.btnSortlist.FlatAppearance.BorderSize = 0;
+            this.btnSortlist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSortlist.ForeColor = System.Drawing.Color.White;
             this.btnSortlist.Location = new System.Drawing.Point(245, 417);
             this.btnSortlist.Name = "btnSortlist";
             this.btnSortlist.Size = new System.Drawing.Size(100, 26);
             this.btnSortlist.TabIndex = 1;
             this.btnSortlist.Text = "Sort List";
-            this.btnSortlist.UseVisualStyleBackColor = true;
+            this.btnSortlist.UseVisualStyleBackColor = false;
             this.btnSortlist.Click += new System.EventHandler(this.btnSortlist_Click);
             // 
             // dtpDateSearcher

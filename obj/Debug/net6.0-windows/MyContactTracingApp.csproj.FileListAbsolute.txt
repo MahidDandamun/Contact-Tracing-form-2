@@ -20,3 +20,8 @@ E:\Source\Repos\MyContactTracingApp\obj\Debug\net6.0-windows\MyContactTracingApp
 E:\Source\Repos\MyContactTracingApp\obj\Debug\net6.0-windows\MyContactTracingApp.FrmQrGenerator.resources
 E:\Source\Repos\MyContactTracingApp\bin\Debug\net6.0-windows\QRCoder.dll
 E:\Source\Repos\MyContactTracingApp\obj\Debug\net6.0-windows\MyContactTracingApp.csproj.CopyComplete
+E:\Source\Repos\MyContactTracingApp\bin\Debug\net6.0-windows\AForge.dll
+E:\Source\Repos\MyContactTracingApp\bin\Debug\net6.0-windows\AForge.Video.dll
+E:\Source\Repos\MyContactTracingApp\bin\Debug\net6.0-windows\AForge.Video.DirectShow.dll
+E:\Source\Repos\MyContactTracingApp\bin\Debug\net6.0-windows\zxing.dll
+E:\Source\Repos\MyContactTracingApp\obj\Debug\net6.0-windows\MyContactTracingApp.FrmQrScanner.resources

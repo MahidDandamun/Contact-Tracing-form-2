@@ -115,5 +115,13 @@ namespace MyContactTracingApp
             frmQrGenerator.Show();
             this.Hide();
         }
+
+        private void btnScanQr_Click(object sender, EventArgs e)
+        {
+            FrmQrScanner frmQrScanner= new FrmQrScanner();
+            frmQrScanner.originalform = this;
+            frmQrScanner.Show();
+            this.Hide();
+        }
     }
 }

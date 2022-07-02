@@ -11,6 +11,7 @@ namespace MyContactTracingApp
 {
     public partial class FrmQrGenerator : Form
     {
+        
         public FrmInfo originalform;
         public FrmQrGenerator()
         {
@@ -34,11 +35,12 @@ namespace MyContactTracingApp
             if ((txtbxAddress.Text != "") && (txtbxFullName.Text != "") && (txtbxEmail.Text != "") && (cbAge.Text != "") &&
                 (txtbxContact.Text != "") && (cbBodyTemp.Text != "") && (txtbxZip.Text != ""))
             {
-                string info = ("Fullname:" + txtbxFullName.Text + "\n" + "Address: " + txtbxAddress.Text + "\n" + "Email: " + txtbxEmail.Text + "\n" + "Contact Number: " + txtbxContact.Text + "\n" + "Zip code: " + txtbxZip.Text + "\n" + "Age: " + cbAge.Text + "\n" + "Temperature: " + cbBodyTemp.Text);
+                string info = ("\"Fullname\" " + ":" + txtbxFullName.Text + "\n" + "Address: " + txtbxAddress.Text + "\n" + "Email: " + txtbxEmail.Text + "\n" + "Contact Number: " + txtbxContact.Text + "\n" + "Zip code: " + txtbxZip.Text + "\n" + "Age: " + cbAge.Text + "\n" + "Temperature: " + cbBodyTemp.Text);
                 QRCoder.QRCodeGenerator QG = new QRCoder.QRCodeGenerator();
                 var Mydata = QG.CreateQrCode(info, QRCoder.QRCodeGenerator.ECCLevel.H);
-                var code = new QRCoder.QRCode(Mydata);
-                pbxQrcode.Image = code.GetGraphic(50);
+                var code = new QRCoder.QRCode(Mydata); 
+                pbxQrcode.Image = code.GetGraphic(50);                       
+               
             }
             else
                 MessageBox.Show("Please Fill in the fields properly");

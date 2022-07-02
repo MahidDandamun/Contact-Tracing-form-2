@@ -33,6 +33,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlPersonalInfo = new System.Windows.Forms.Panel();
+            this.cbBodyTemp = new System.Windows.Forms.ComboBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.rdbtn14 = new System.Windows.Forms.RadioButton();
             this.rdbtn13 = new System.Windows.Forms.RadioButton();
@@ -83,7 +84,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.btnCreateQrCode = new System.Windows.Forms.Button();
-            this.cbBodyTemp = new System.Windows.Forms.ComboBox();
+            this.btnScanQr = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlPersonalInfo.SuspendLayout();
@@ -169,6 +170,25 @@
             this.pnlPersonalInfo.Size = new System.Drawing.Size(606, 670);
             this.pnlPersonalInfo.TabIndex = 1;
             // 
+            // cbBodyTemp
+            // 
+            this.cbBodyTemp.FormattingEnabled = true;
+            this.cbBodyTemp.Items.AddRange(new object[] {
+            "35°",
+            "35.5°",
+            "36°",
+            "36.5°",
+            "37°",
+            "37.5°",
+            "38°",
+            "38.5°",
+            "",
+            ""});
+            this.cbBodyTemp.Location = new System.Drawing.Point(441, 215);
+            this.cbBodyTemp.Name = "cbBodyTemp";
+            this.cbBodyTemp.Size = new System.Drawing.Size(53, 23);
+            this.cbBodyTemp.TabIndex = 34;
+            // 
             // groupBox7
             // 
             this.groupBox7.Controls.Add(this.rdbtn14);
@@ -182,6 +202,7 @@
             // rdbtn14
             // 
             this.rdbtn14.AutoSize = true;
+            this.rdbtn14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.rdbtn14.Location = new System.Drawing.Point(57, 9);
             this.rdbtn14.Name = "rdbtn14";
             this.rdbtn14.Size = new System.Drawing.Size(41, 19);
@@ -193,6 +214,7 @@
             // rdbtn13
             // 
             this.rdbtn13.AutoSize = true;
+            this.rdbtn13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.rdbtn13.Location = new System.Drawing.Point(9, 9);
             this.rdbtn13.Name = "rdbtn13";
             this.rdbtn13.Size = new System.Drawing.Size(42, 19);
@@ -214,6 +236,7 @@
             // rdbtn12
             // 
             this.rdbtn12.AutoSize = true;
+            this.rdbtn12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.rdbtn12.Location = new System.Drawing.Point(57, 9);
             this.rdbtn12.Name = "rdbtn12";
             this.rdbtn12.Size = new System.Drawing.Size(41, 19);
@@ -225,6 +248,7 @@
             // rdbtn11
             // 
             this.rdbtn11.AutoSize = true;
+            this.rdbtn11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.rdbtn11.Location = new System.Drawing.Point(9, 9);
             this.rdbtn11.Name = "rdbtn11";
             this.rdbtn11.Size = new System.Drawing.Size(42, 19);
@@ -246,6 +270,7 @@
             // rdbtn10
             // 
             this.rdbtn10.AutoSize = true;
+            this.rdbtn10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.rdbtn10.Location = new System.Drawing.Point(57, 9);
             this.rdbtn10.Name = "rdbtn10";
             this.rdbtn10.Size = new System.Drawing.Size(41, 19);
@@ -257,6 +282,7 @@
             // rdbtn9
             // 
             this.rdbtn9.AutoSize = true;
+            this.rdbtn9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.rdbtn9.Location = new System.Drawing.Point(9, 9);
             this.rdbtn9.Name = "rdbtn9";
             this.rdbtn9.Size = new System.Drawing.Size(42, 19);
@@ -278,6 +304,7 @@
             // rdbtn8
             // 
             this.rdbtn8.AutoSize = true;
+            this.rdbtn8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.rdbtn8.Location = new System.Drawing.Point(54, 9);
             this.rdbtn8.Name = "rdbtn8";
             this.rdbtn8.Size = new System.Drawing.Size(41, 19);
@@ -289,6 +316,7 @@
             // rdbtn7
             // 
             this.rdbtn7.AutoSize = true;
+            this.rdbtn7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.rdbtn7.Location = new System.Drawing.Point(6, 9);
             this.rdbtn7.Name = "rdbtn7";
             this.rdbtn7.Size = new System.Drawing.Size(42, 19);
@@ -310,6 +338,7 @@
             // rdbtn4
             // 
             this.rdbtn4.AutoSize = true;
+            this.rdbtn4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.rdbtn4.Location = new System.Drawing.Point(54, 9);
             this.rdbtn4.Name = "rdbtn4";
             this.rdbtn4.Size = new System.Drawing.Size(41, 19);
@@ -321,6 +350,7 @@
             // rdbtn3
             // 
             this.rdbtn3.AutoSize = true;
+            this.rdbtn3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.rdbtn3.Location = new System.Drawing.Point(6, 9);
             this.rdbtn3.Name = "rdbtn3";
             this.rdbtn3.Size = new System.Drawing.Size(42, 19);
@@ -342,6 +372,7 @@
             // rdbtn6
             // 
             this.rdbtn6.AutoSize = true;
+            this.rdbtn6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.rdbtn6.Location = new System.Drawing.Point(54, 9);
             this.rdbtn6.Name = "rdbtn6";
             this.rdbtn6.Size = new System.Drawing.Size(41, 19);
@@ -353,6 +384,7 @@
             // rdbtn5
             // 
             this.rdbtn5.AutoSize = true;
+            this.rdbtn5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.rdbtn5.Location = new System.Drawing.Point(6, 9);
             this.rdbtn5.Name = "rdbtn5";
             this.rdbtn5.Size = new System.Drawing.Size(42, 19);
@@ -374,6 +406,7 @@
             // rdbtn2
             // 
             this.rdbtn2.AutoSize = true;
+            this.rdbtn2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.rdbtn2.Location = new System.Drawing.Point(54, 9);
             this.rdbtn2.Name = "rdbtn2";
             this.rdbtn2.Size = new System.Drawing.Size(41, 19);
@@ -385,6 +418,7 @@
             // rdbtn1
             // 
             this.rdbtn1.AutoSize = true;
+            this.rdbtn1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.rdbtn1.Location = new System.Drawing.Point(6, 9);
             this.rdbtn1.Name = "rdbtn1";
             this.rdbtn1.Size = new System.Drawing.Size(42, 19);
@@ -747,6 +781,7 @@
             // 
             // txtbxFullname
             // 
+            this.txtbxFullname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(243)))), ((int)(((byte)(233)))));
             this.txtbxFullname.Location = new System.Drawing.Point(26, 94);
             this.txtbxFullname.Name = "txtbxFullname";
             this.txtbxFullname.Size = new System.Drawing.Size(230, 23);
@@ -765,42 +800,42 @@
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(517, 833);
+            this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(106)))), ((int)(((byte)(78)))));
+            this.btnSubmit.FlatAppearance.BorderSize = 0;
+            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubmit.Location = new System.Drawing.Point(517, 839);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(124, 40);
+            this.btnSubmit.Size = new System.Drawing.Size(124, 29);
             this.btnSubmit.TabIndex = 2;
-            this.btnSubmit.Text = "Submit";
-            this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Text = "&Submit";
+            this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // btnCreateQrCode
             // 
+            this.btnCreateQrCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(106)))), ((int)(((byte)(78)))));
+            this.btnCreateQrCode.FlatAppearance.BorderSize = 0;
+            this.btnCreateQrCode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCreateQrCode.Location = new System.Drawing.Point(47, 839);
             this.btnCreateQrCode.Name = "btnCreateQrCode";
             this.btnCreateQrCode.Size = new System.Drawing.Size(124, 29);
             this.btnCreateQrCode.TabIndex = 3;
-            this.btnCreateQrCode.Text = "Create Qr code";
-            this.btnCreateQrCode.UseVisualStyleBackColor = true;
+            this.btnCreateQrCode.Text = "&Create Qr code";
+            this.btnCreateQrCode.UseVisualStyleBackColor = false;
             this.btnCreateQrCode.Click += new System.EventHandler(this.btnCreateQrCode_Click);
             // 
-            // cbBodyTemp
+            // btnScanQr
             // 
-            this.cbBodyTemp.FormattingEnabled = true;
-            this.cbBodyTemp.Items.AddRange(new object[] {
-            "35°",
-            "35.5°",
-            "36°",
-            "36.5°",
-            "37°",
-            "37.5°",
-            "38°",
-            "38.5°",
-            "",
-            ""});
-            this.cbBodyTemp.Location = new System.Drawing.Point(441, 215);
-            this.cbBodyTemp.Name = "cbBodyTemp";
-            this.cbBodyTemp.Size = new System.Drawing.Size(53, 23);
-            this.cbBodyTemp.TabIndex = 34;
+            this.btnScanQr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(106)))), ((int)(((byte)(78)))));
+            this.btnScanQr.FlatAppearance.BorderSize = 0;
+            this.btnScanQr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnScanQr.Location = new System.Drawing.Point(269, 839);
+            this.btnScanQr.Name = "btnScanQr";
+            this.btnScanQr.Size = new System.Drawing.Size(141, 29);
+            this.btnScanQr.TabIndex = 4;
+            this.btnScanQr.Text = "&Scan Qr Code Instead";
+            this.btnScanQr.UseVisualStyleBackColor = false;
+            this.btnScanQr.Click += new System.EventHandler(this.btnScanQr_Click);
             // 
             // FrmInfo
             // 
@@ -808,10 +843,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(243)))), ((int)(((byte)(233)))));
             this.ClientSize = new System.Drawing.Size(664, 885);
+            this.Controls.Add(this.btnScanQr);
             this.Controls.Add(this.btnCreateQrCode);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.pnlPersonalInfo);
             this.Controls.Add(this.panel1);
+            this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FrmInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -896,5 +933,6 @@
         private RadioButton rdbtn1;
         private Button btnCreateQrCode;
         private ComboBox cbBodyTemp;
+        private Button btnScanQr;
     }
 }

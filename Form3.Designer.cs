@@ -90,12 +90,16 @@
             // 
             // btnGenerateQr
             // 
+            this.btnGenerateQr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(106)))), ((int)(((byte)(78)))));
+            this.btnGenerateQr.FlatAppearance.BorderSize = 0;
+            this.btnGenerateQr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerateQr.ForeColor = System.Drawing.Color.White;
             this.btnGenerateQr.Location = new System.Drawing.Point(145, 409);
             this.btnGenerateQr.Name = "btnGenerateQr";
             this.btnGenerateQr.Size = new System.Drawing.Size(122, 29);
             this.btnGenerateQr.TabIndex = 2;
-            this.btnGenerateQr.Text = "Generate Qr Code";
-            this.btnGenerateQr.UseVisualStyleBackColor = true;
+            this.btnGenerateQr.Text = "&Generate Qr Code";
+            this.btnGenerateQr.UseVisualStyleBackColor = false;
             this.btnGenerateQr.Click += new System.EventHandler(this.btnGenerateQr_Click);
             // 
             // txtbxFullName
@@ -337,12 +341,16 @@
             // 
             // btnBackToFrmInfo
             // 
+            this.btnBackToFrmInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(106)))), ((int)(((byte)(78)))));
+            this.btnBackToFrmInfo.FlatAppearance.BorderSize = 0;
+            this.btnBackToFrmInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBackToFrmInfo.ForeColor = System.Drawing.Color.White;
             this.btnBackToFrmInfo.Location = new System.Drawing.Point(668, 409);
             this.btnBackToFrmInfo.Name = "btnBackToFrmInfo";
             this.btnBackToFrmInfo.Size = new System.Drawing.Size(102, 29);
             this.btnBackToFrmInfo.TabIndex = 20;
-            this.btnBackToFrmInfo.Text = "Go back -->";
-            this.btnBackToFrmInfo.UseVisualStyleBackColor = true;
+            this.btnBackToFrmInfo.Text = "&Go back -->";
+            this.btnBackToFrmInfo.UseVisualStyleBackColor = false;
             this.btnBackToFrmInfo.Click += new System.EventHandler(this.btnBackToFrmInfo_Click);
             // 
             // pnl1
@@ -392,6 +400,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FrmQrGenerator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            
             this.Load += new System.EventHandler(this.FrmQrGenerator_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
