@@ -32,7 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnGenerateQr = new System.Windows.Forms.Button();
             this.txtbxFullName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,8 +49,12 @@
             this.cbBodyTemp = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnBackToFrmInfo = new System.Windows.Forms.Button();
+            this.pnl1 = new System.Windows.Forms.Panel();
+            this.pbxQrcode = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxQrcode)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -60,7 +64,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-2, -1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(526, 95);
+            this.panel1.Size = new System.Drawing.Size(787, 95);
             this.panel1.TabIndex = 1;
             // 
             // pictureBox1
@@ -84,18 +88,19 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "CONTACT TRACING FORM";
             // 
-            // button1
+            // btnGenerateQr
             // 
-            this.button1.Location = new System.Drawing.Point(202, 400);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 29);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Generate Qr Code";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnGenerateQr.Location = new System.Drawing.Point(145, 409);
+            this.btnGenerateQr.Name = "btnGenerateQr";
+            this.btnGenerateQr.Size = new System.Drawing.Size(122, 29);
+            this.btnGenerateQr.TabIndex = 2;
+            this.btnGenerateQr.Text = "Generate Qr Code";
+            this.btnGenerateQr.UseVisualStyleBackColor = true;
+            this.btnGenerateQr.Click += new System.EventHandler(this.btnGenerateQr_Click);
             // 
             // txtbxFullName
             // 
-            this.txtbxFullName.Location = new System.Drawing.Point(36, 178);
+            this.txtbxFullName.Location = new System.Drawing.Point(23, 73);
             this.txtbxFullName.Name = "txtbxFullName";
             this.txtbxFullName.Size = new System.Drawing.Size(224, 23);
             this.txtbxFullName.TabIndex = 3;
@@ -103,7 +108,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 163);
+            this.label2.Location = new System.Drawing.Point(20, 58);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 15);
             this.label2.TabIndex = 4;
@@ -112,7 +117,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(33, 220);
+            this.label3.Location = new System.Drawing.Point(20, 115);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(107, 15);
             this.label3.TabIndex = 5;
@@ -121,7 +126,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(33, 276);
+            this.label4.Location = new System.Drawing.Point(20, 171);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(99, 15);
             this.label4.TabIndex = 6;
@@ -130,7 +135,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(35, 325);
+            this.label5.Location = new System.Drawing.Point(22, 220);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(58, 15);
             this.label5.TabIndex = 7;
@@ -139,7 +144,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(328, 163);
+            this.label6.Location = new System.Drawing.Point(271, 58);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(31, 15);
             this.label6.TabIndex = 8;
@@ -148,7 +153,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(328, 220);
+            this.label7.Location = new System.Drawing.Point(271, 115);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(106, 15);
             this.label7.TabIndex = 9;
@@ -156,21 +161,21 @@
             // 
             // txtbxAddress
             // 
-            this.txtbxAddress.Location = new System.Drawing.Point(35, 234);
+            this.txtbxAddress.Location = new System.Drawing.Point(22, 129);
             this.txtbxAddress.Name = "txtbxAddress";
             this.txtbxAddress.Size = new System.Drawing.Size(224, 23);
             this.txtbxAddress.TabIndex = 10;
             // 
             // txtbxContact
             // 
-            this.txtbxContact.Location = new System.Drawing.Point(35, 289);
+            this.txtbxContact.Location = new System.Drawing.Point(22, 184);
             this.txtbxContact.Name = "txtbxContact";
             this.txtbxContact.Size = new System.Drawing.Size(224, 23);
             this.txtbxContact.TabIndex = 11;
             // 
             // txtbxZip
             // 
-            this.txtbxZip.Location = new System.Drawing.Point(35, 339);
+            this.txtbxZip.Location = new System.Drawing.Point(22, 234);
             this.txtbxZip.Name = "txtbxZip";
             this.txtbxZip.Size = new System.Drawing.Size(122, 23);
             this.txtbxZip.TabIndex = 12;
@@ -178,7 +183,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(328, 276);
+            this.label8.Location = new System.Drawing.Point(271, 171);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(39, 15);
             this.label8.TabIndex = 15;
@@ -186,7 +191,7 @@
             // 
             // txtbxEmail
             // 
-            this.txtbxEmail.Location = new System.Drawing.Point(328, 289);
+            this.txtbxEmail.Location = new System.Drawing.Point(271, 184);
             this.txtbxEmail.Name = "txtbxEmail";
             this.txtbxEmail.Size = new System.Drawing.Size(93, 23);
             this.txtbxEmail.TabIndex = 16;
@@ -295,7 +300,7 @@
             "98",
             "99",
             "100"});
-            this.cbAge.Location = new System.Drawing.Point(331, 179);
+            this.cbAge.Location = new System.Drawing.Point(274, 74);
             this.cbAge.Name = "cbAge";
             this.cbAge.Size = new System.Drawing.Size(53, 23);
             this.cbAge.TabIndex = 17;
@@ -314,7 +319,7 @@
             "38.5°",
             "",
             ""});
-            this.cbBodyTemp.Location = new System.Drawing.Point(331, 234);
+            this.cbBodyTemp.Location = new System.Drawing.Point(274, 129);
             this.cbBodyTemp.Name = "cbBodyTemp";
             this.cbBodyTemp.Size = new System.Drawing.Size(53, 23);
             this.cbBodyTemp.TabIndex = 18;
@@ -324,7 +329,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Bahnschrift Condensed", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label9.Location = new System.Drawing.Point(16, 112);
+            this.label9.Location = new System.Drawing.Point(3, 7);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(328, 35);
             this.label9.TabIndex = 19;
@@ -332,37 +337,57 @@
             // 
             // btnBackToFrmInfo
             // 
-            this.btnBackToFrmInfo.Location = new System.Drawing.Point(412, 400);
+            this.btnBackToFrmInfo.Location = new System.Drawing.Point(668, 409);
             this.btnBackToFrmInfo.Name = "btnBackToFrmInfo";
-            this.btnBackToFrmInfo.Size = new System.Drawing.Size(77, 29);
+            this.btnBackToFrmInfo.Size = new System.Drawing.Size(102, 29);
             this.btnBackToFrmInfo.TabIndex = 20;
-            this.btnBackToFrmInfo.Text = "-->";
+            this.btnBackToFrmInfo.Text = "Go back -->";
             this.btnBackToFrmInfo.UseVisualStyleBackColor = true;
             this.btnBackToFrmInfo.Click += new System.EventHandler(this.btnBackToFrmInfo_Click);
+            // 
+            // pnl1
+            // 
+            this.pnl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(243)))), ((int)(((byte)(228)))));
+            this.pnl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl1.Controls.Add(this.label9);
+            this.pnl1.Controls.Add(this.cbBodyTemp);
+            this.pnl1.Controls.Add(this.cbAge);
+            this.pnl1.Controls.Add(this.txtbxEmail);
+            this.pnl1.Controls.Add(this.label8);
+            this.pnl1.Controls.Add(this.txtbxZip);
+            this.pnl1.Controls.Add(this.txtbxContact);
+            this.pnl1.Controls.Add(this.txtbxAddress);
+            this.pnl1.Controls.Add(this.label7);
+            this.pnl1.Controls.Add(this.label6);
+            this.pnl1.Controls.Add(this.label5);
+            this.pnl1.Controls.Add(this.label4);
+            this.pnl1.Controls.Add(this.label3);
+            this.pnl1.Controls.Add(this.label2);
+            this.pnl1.Controls.Add(this.txtbxFullName);
+            this.pnl1.Location = new System.Drawing.Point(13, 105);
+            this.pnl1.Name = "pnl1";
+            this.pnl1.Size = new System.Drawing.Size(408, 286);
+            this.pnl1.TabIndex = 21;
+            // 
+            // pbxQrcode
+            // 
+            this.pbxQrcode.Location = new System.Drawing.Point(473, 127);
+            this.pbxQrcode.Name = "pbxQrcode";
+            this.pbxQrcode.Size = new System.Drawing.Size(263, 236);
+            this.pbxQrcode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxQrcode.TabIndex = 22;
+            this.pbxQrcode.TabStop = false;
             // 
             // FrmQrGenerator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(243)))), ((int)(((byte)(233)))));
-            this.ClientSize = new System.Drawing.Size(523, 450);
+            this.ClientSize = new System.Drawing.Size(782, 450);
+            this.Controls.Add(this.pbxQrcode);
+            this.Controls.Add(this.pnl1);
             this.Controls.Add(this.btnBackToFrmInfo);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.cbBodyTemp);
-            this.Controls.Add(this.cbAge);
-            this.Controls.Add(this.txtbxEmail);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtbxZip);
-            this.Controls.Add(this.txtbxContact);
-            this.Controls.Add(this.txtbxAddress);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtbxFullName);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnGenerateQr);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FrmQrGenerator";
@@ -371,8 +396,10 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnl1.ResumeLayout(false);
+            this.pnl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxQrcode)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -381,7 +408,7 @@
         private Panel panel1;
         private PictureBox pictureBox1;
         private Label label1;
-        private Button button1;
+        private Button btnGenerateQr;
         private TextBox txtbxFullName;
         private Label label2;
         private Label label3;
@@ -398,5 +425,7 @@
         private ComboBox cbBodyTemp;
         private Label label9;
         private Button btnBackToFrmInfo;
+        private Panel pnl1;
+        private PictureBox pbxQrcode;
     }
 }
