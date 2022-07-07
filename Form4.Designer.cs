@@ -117,7 +117,7 @@
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnBack.ForeColor = System.Drawing.Color.White;
-            this.btnBack.Location = new System.Drawing.Point(396, 481);
+            this.btnBack.Location = new System.Drawing.Point(694, 481);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(70, 31);
             this.btnBack.TabIndex = 6;
@@ -148,7 +148,6 @@
             // tmr1
             // 
             this.tmr1.Interval = 1000;
-            //this.tmr1.Tick += new System.EventHandler(this.tmr1_Tick);
             // 
             // lb1
             // 
