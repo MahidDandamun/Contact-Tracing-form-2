@@ -83,7 +83,6 @@
             this.txtbxFullname = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
-            this.btnCreateQrCode = new System.Windows.Forms.Button();
             this.btnScanQr = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -811,25 +810,12 @@
             this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
-            // btnCreateQrCode
-            // 
-            this.btnCreateQrCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(106)))), ((int)(((byte)(78)))));
-            this.btnCreateQrCode.FlatAppearance.BorderSize = 0;
-            this.btnCreateQrCode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCreateQrCode.Location = new System.Drawing.Point(47, 839);
-            this.btnCreateQrCode.Name = "btnCreateQrCode";
-            this.btnCreateQrCode.Size = new System.Drawing.Size(124, 29);
-            this.btnCreateQrCode.TabIndex = 3;
-            this.btnCreateQrCode.Text = "&Create Qr code";
-            this.btnCreateQrCode.UseVisualStyleBackColor = false;
-            this.btnCreateQrCode.Click += new System.EventHandler(this.btnCreateQrCode_Click);
-            // 
             // btnScanQr
             // 
             this.btnScanQr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(106)))), ((int)(((byte)(78)))));
             this.btnScanQr.FlatAppearance.BorderSize = 0;
             this.btnScanQr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnScanQr.Location = new System.Drawing.Point(269, 839);
+            this.btnScanQr.Location = new System.Drawing.Point(35, 839);
             this.btnScanQr.Name = "btnScanQr";
             this.btnScanQr.Size = new System.Drawing.Size(141, 29);
             this.btnScanQr.TabIndex = 4;
@@ -844,7 +830,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(243)))), ((int)(((byte)(233)))));
             this.ClientSize = new System.Drawing.Size(664, 885);
             this.Controls.Add(this.btnScanQr);
-            this.Controls.Add(this.btnCreateQrCode);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.pnlPersonalInfo);
             this.Controls.Add(this.panel1);
@@ -931,7 +916,6 @@
         private RadioButton rdbtn5;
         private RadioButton rdbtn2;
         private RadioButton rdbtn1;
-        private Button btnCreateQrCode;
         private ComboBox cbBodyTemp;
         private Button btnScanQr;
     }

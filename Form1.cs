@@ -108,14 +108,6 @@ namespace MyContactTracingApp
                 MessageBox.Show("Please fill in the fields properly");
         }
 
-        private void btnCreateQrCode_Click(object sender, EventArgs e)
-        {
-         FrmQrGenerator frmQrGenerator = new FrmQrGenerator();  
-            frmQrGenerator.originalform = this; 
-            frmQrGenerator.Show();
-            this.Hide();
-        }
-
         private void btnScanQr_Click(object sender, EventArgs e)
         {
             FrmQrScanner frmQrScanner= new FrmQrScanner();
